@@ -1,12 +1,13 @@
-import "./App.css";
-import UseStateExample from "../components/UseStateExample";
-import UseEffectExample from "../components/UseEffectExample";
-import UseStateAndEffectExample from "../components/UseStateAndEffectExample";
-import UseMemoExample from "../components/UseMemoExample";
-import BasicPropComponent from "../components/BasicPropComponent";
-import UseReducerExample from "../components/UseReducerExample";
 import { useState } from "react";
+import { Test } from "../components";
+import BasicPropComponent from "../components/BasicPropComponent";
 import UseCallbackExample from "../components/UseCallbackExample";
+import UseEffectExample from "../components/UseEffectExample";
+import UseMemoExample from "../components/UseMemoExample";
+import UseReducerExample from "../components/UseReducerExample";
+import UseStateAndEffectExample from "../components/UseStateAndEffectExample";
+import UseStateExample from "../components/UseStateExample";
+import "./App.css";
 
 const App = () => {
   const [users, setUsers] = useState([
@@ -24,14 +25,15 @@ const App = () => {
 
   return (
     <>
-      {/* <UseStateExample /> */}
-      {/* <UseStateAndEffectExample />
-      <UseEffectExample /> */}
-      {/* <UseMemoExample /> */}
-      {/* <BasicPropComponent users={users} /> */}
-      {/* <UseReducerExample input={input} /> */}
-      {/* <UseReducerExample /> */}
-      {/* <form>
+      <Test />
+      <UseStateExample />
+      <UseStateAndEffectExample />
+      <UseEffectExample />
+      <UseMemoExample />
+      <BasicPropComponent users={users} />
+      <UseReducerExample input={input} />
+      <UseReducerExample />
+      <form>
         <input
           type="text"
           value={input}
@@ -39,7 +41,7 @@ const App = () => {
         ></input>
         <button onClick={inputHandler}>Submit</button>
         <h1>{input}</h1>
-      </form> */}
+      </form>
       <UseCallbackExample />
     </>
   );

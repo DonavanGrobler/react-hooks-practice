@@ -4,7 +4,7 @@ const BasicPropComponent = (props) => {
   return (
     <div>
       {users.map((user) => {
-        return <p>Greetings fellow human: {user.name}</p>;
+        return <p key={user.id}>Greetings fellow human: {user.name}</p>;
       })}
     </div>
   );

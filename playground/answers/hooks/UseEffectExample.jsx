@@ -27,7 +27,7 @@ const UseEffectExample = () => {
       </div>
       <h1>{resourceType}</h1>
       {items.map((item) => {
-        return <pre>{JSON.stringify(item)}</pre>;
+        return <pre key={item.id}>{JSON.stringify(item)}</pre>;
       })}
     </>
   );

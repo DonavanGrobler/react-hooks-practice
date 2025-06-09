@@ -6,10 +6,10 @@ export const Test = () => {
 
   const numbers = [1, 2, 3, 4, 5, 6];
   const users = [
-    { name: "test user", surname: "something", age: 20 },
-    { name: "unknown", surname: "idk", age: 23 },
-    { name: "pilot", surname: "yooooo", age: 25 },
-    { name: "abort", surname: "testtttiinngg", age: 60 },
+    { name: "Donavan", surname: "Grobler", age: 26 },
+    { name: "Caitlynn", surname: "Grobler", age: 24 },
+    { name: "Domenique", surname: "Swart", age: 21 },
+    { name: "Anica", surname: "Smit", age: 26 },
   ];
 
   const DoubledNumbers = (numbers) => {

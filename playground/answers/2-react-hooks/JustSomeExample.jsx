@@ -1,3 +1,5 @@
+import PropTypes from "prop-types";
+
 const JustSomeExample = (props) => {
   const users = props.users;
 
@@ -5,11 +7,19 @@ const JustSomeExample = (props) => {
     <div>
       <ul>
         {users.map((user) => {
-          return <li>{user.name}</li>;
+          return <li key={user.name}>{user.name}</li>;
         })}
       </ul>
     </div>
   );
+};
+
+JustSomeExample.propTypes = {
+  users: PropTypes.arrayOf(
+    PropTypes.shape({
+      name: PropTypes.string.isRequired,
+    })
+  ).isRequired,
 };
 
 export default JustSomeExample;

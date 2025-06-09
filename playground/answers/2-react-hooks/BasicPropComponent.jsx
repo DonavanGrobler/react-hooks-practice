@@ -6,7 +6,7 @@ const BasicPropComponent = (props) => {
   return (
     <div>
       {users.map((user) => {
-        return <p key={user.id}>Greetings fellow human: {user.name}</p>;
+        return <p key={user.name}>Greetings fellow human: {user.name}</p>;
       })}
     </div>
   );
@@ -15,7 +15,6 @@ const BasicPropComponent = (props) => {
 BasicPropComponent.propTypes = {
   users: PropTypes.arrayOf(
     PropTypes.shape({
-      id: PropTypes.any.isRequired,
       name: PropTypes.string.isRequired,
     })
   ).isRequired,

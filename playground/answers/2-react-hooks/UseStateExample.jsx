@@ -32,7 +32,7 @@ const UseStateExample = () => {
       <div>
         {showParagraph && (
           <div>
-            <p1>You didn't see anything</p1>
+            <p1>You did not see anything</p1>
           </div>
         )}
       </div>

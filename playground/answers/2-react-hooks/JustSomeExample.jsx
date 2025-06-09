@@ -15,11 +15,7 @@ const JustSomeExample = (props) => {
 };
 
 JustSomeExample.propTypes = {
-  users: PropTypes.arrayOf(
-    PropTypes.shape({
-      name: PropTypes.string.isRequired,
-    })
-  ).isRequired,
+  users: PropTypes.isRequired,
 };
 
 export default JustSomeExample;

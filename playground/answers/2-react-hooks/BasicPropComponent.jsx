@@ -13,11 +13,7 @@ const BasicPropComponent = (props) => {
 };
 
 BasicPropComponent.propTypes = {
-  users: PropTypes.arrayOf(
-    PropTypes.shape({
-      name: PropTypes.string.isRequired,
-    })
-  ).isRequired,
+  users: PropTypes.isRequired,
 };
 
 export default BasicPropComponent;
